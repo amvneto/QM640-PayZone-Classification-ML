@@ -1,0 +1,33 @@
+project_seed: 640
+selected_classifier:
+  name: logistic_regression
+  features:
+    - VSH
+    - PHIT
+  preprocessing:
+    scaler: StandardScaler
+    imputer_raw_data: none
+    imputer_missingness_sensitivity: training_fold_median
+  parameters:
+    C: 1.0
+    solver: lbfgs
+    max_iter: 1000
+  probability_threshold: 0.50
+validation:
+  outer: LeaveOneGroupOut
+  group_column: Well_ID
+  pooled_and_macro_reporting: true
+restricted_features:
+  grouping_only:
+    - Well_ID
+  quality_control_only:
+    - MD
+    - TVDSS
+  diagnostic_only:
+    - ZONE
+    - SW
+    - RT
+    - K
+  target_only:
+    - NTG
+operational_status: advisory_only
