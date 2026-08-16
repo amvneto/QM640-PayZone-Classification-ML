@@ -1,0 +1,5 @@
+Model,Pooled_MAE_ohm_m,Pooled_RMSE_ohm_m,Pooled_R2,Macro_MAE_ohm_m,Macro_R2
+Linear VSH,0.981,3.536,0.582,0.929,0.639
+Quadratic VSH,0.779,2.617,0.771,0.741,0.802
+Random forest VSH,0.038,0.714,0.983,0.034,0.979
+Gradient boosting VSH,0.084,0.85,0.976,0.079,0.971

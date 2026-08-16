@@ -1,0 +1,5 @@
+Model,Grouped_Pooled_Balanced_Accuracy,Grouped_Macro_Balanced_Accuracy,Brier,ROC_AUC,Role
+Logistic regression,0.904,0.836,0.069,0.959,Selected reduced model
+Pruned CART,0.888,0.816,0.077,0.944,Interpretable benchmark
+Random forest,0.891,0.82,0.077,0.945,Nonlinear benchmark
+Gradient boosting,0.889,0.817,0.074,0.948,Nonlinear benchmark
